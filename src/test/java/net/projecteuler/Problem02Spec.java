@@ -15,18 +15,56 @@ import static org.junit.Assert.assertEquals;
  */
 public class Problem02Spec {
 
-    // original tests
+    // original tests: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-2-even-fibonacci-numbers
     @Test
-    public void given_10Return_44(){
+    public void given_10Return_44() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(10);
+        assertEquals(44, fibonacciSequence.addEvens());
     }
+
     @Test
-    public void given_18Return_3382(){
+    public void given_18Return_3382() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(18);
+        assertEquals(3382, fibonacciSequence.addEvens());
     }
+
     @Test
-    public void given_23Return_60696(){
+    public void given_23Return_60696() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(23);
+        assertEquals(60696,fibonacciSequence.addEvens());
     }
+
     @Test
-    public void given_43Return_350704366(){
+    public void given_43Return_350704366() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(43);
+        assertEquals(350704366, fibonacciSequence.addEvens());
+
+    }
+
+    // additional tests
+    @Test
+    public void given9_ReturnResult44() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(9);
+        assertEquals(44, fibonacciSequence.addEvens());
+    }
+
+    @Test
+    public void given6_Return10() {
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(6);
+        assertEquals(10, fibonacciSequence.addEvens());
+    }
+
+    @Test
+    public void given_5Return10(){
+        FibonacciSequence fibonacciSequence = new FibonacciSequence();
+        fibonacciSequence.captureValues(5); // returns [1,2,3,5,8]
+        assertEquals(10, fibonacciSequence.addEvens());
     }
 
 }
