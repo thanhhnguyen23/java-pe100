@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
  *
  * Find the sum of all the multiples of 3 or 5 below the provided parameter value number.
  */
-public class Day01Spec {
+public class Problem01Spec {
 
     // original tests: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-1-multiples-of-3-and-5
     @Test
