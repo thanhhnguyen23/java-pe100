@@ -67,7 +67,6 @@ public class MyNumber {
 
         primeFactorsProcessor(factorsSize);
 
-//        System.out.println("prime factors: " + primeFactors);
         return primeFactors;
     }
 
@@ -85,7 +84,6 @@ public class MyNumber {
     public Long findLargestPrimeFactor(long input) {
         setInput(input);
         findPrimeFactors(input);
-//        System.out.println("largest prime factor: " + Collections.max(getPrimeFactors()));
         return Collections.max(getPrimeFactors());
     }
 
