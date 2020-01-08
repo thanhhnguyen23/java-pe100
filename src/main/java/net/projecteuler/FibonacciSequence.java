@@ -21,7 +21,7 @@ public class FibonacciSequence {
         else return fib(input - 1) + fib(input - 2);
     }
 
-    public <T> List<Integer> captureResults() {
+    public List<Integer> captureResults() {
         List<Integer> evenOutput = new ArrayList<>();
         processEvenValues(evenOutput);
 
@@ -36,7 +36,7 @@ public class FibonacciSequence {
         }
     }
 
-    public <T> int addEvens() {
+    public int addEvens() {
         List<Integer> output = new ArrayList<>();
         for(int i = 0; i < getRecursionValues().size(); i++){
             if(getRecursionValues().get(i) % 2 == 0) {
