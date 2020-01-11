@@ -12,13 +12,6 @@ import static org.junit.Assert.*;
  */
 public class Problem05Spec {
 
-    // additional tests
-    @Test
-    public void givenInput10_Return2520() {
-        SmallestMultiple smallestMultiple = new SmallestMultiple();
-        assertEquals(2520, smallestMultiple.isDivisibleFrom1ToNProcessor(10));
-    }
-
     // original tests: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-5-smallest-multiple
     @Test
     public void givenInput5_Return60() {
@@ -44,4 +37,10 @@ public class Problem05Spec {
         assertEquals(232792560, smallestMultiple.isDivisibleFrom1ToNProcessor(20));
     }
 
+    // additional tests
+    @Test
+    public void givenInput10_Return2520() {
+        SmallestMultiple smallestMultiple = new SmallestMultiple();
+        assertEquals(2520, smallestMultiple.isDivisibleFrom1ToNProcessor(10));
+    }
 }
