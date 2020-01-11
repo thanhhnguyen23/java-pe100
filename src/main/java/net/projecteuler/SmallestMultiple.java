@@ -2,8 +2,6 @@ package net.projecteuler;
 
 public class SmallestMultiple {
 
-    private int originalNumber;
-
     public boolean multiplesProcessor(int startNum, int upperBoundNum) {
         for(int i = 1; i < upperBoundNum+ 1; i++){
             if(startNum % i != 0){
