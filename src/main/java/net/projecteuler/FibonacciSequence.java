@@ -21,21 +21,6 @@ public class FibonacciSequence {
         else return fib(input - 1) + fib(input - 2);
     }
 
-    public List<Integer> captureResults() {
-        List<Integer> evenOutput = new ArrayList<>();
-        processEvenValues(evenOutput);
-
-        return evenOutput;
-    }
-
-    private void processEvenValues(List<Integer> evenOutput) {
-        for(int i = 1; i < getRecursionValues().size(); i++){
-            if(getRecursionValues().get(i) % 2 == 0) {
-                evenOutput.add(getRecursionValues().get(i));
-            }
-        }
-    }
-
     public int addEvens() {
         List<Integer> output = new ArrayList<>();
         for(int i = 0; i < getRecursionValues().size(); i++){
