@@ -5,11 +5,8 @@ import java.util.List;
 
 public class MyOtherNumber {
     List<Integer> primes = new ArrayList<>();
-    private long input;
 
     public Integer findNthPrime(long n) {
-        this.input = n;
-
         for (int i = 1; i < Math.pow(2, n); i++) {
             if (isPrime(i)) {
                 primes.add(i);

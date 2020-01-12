@@ -20,7 +20,6 @@ public class SumSquareDifference {
     }
 
     public int difference(int n) {
-        int result = 0;
         return squareOfSumOfNNumbers(n) - sumOfSquaresOfNNumbers(n);
     }
 }
