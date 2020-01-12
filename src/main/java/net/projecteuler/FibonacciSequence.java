@@ -28,8 +28,6 @@ public class FibonacciSequence {
                 output.add(getRecursionValues().get(i));
             }
         }
-
-        System.out.println("even values from recursion: " + output);
         return output.stream().mapToInt(i -> Integer.parseInt(String.valueOf(i))).sum();
     }
 
