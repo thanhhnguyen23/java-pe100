@@ -2,6 +2,7 @@ package net.projecteuler;
 
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 
 /**
@@ -36,12 +37,15 @@ public class Problem08Spec {
 
     // original tests: https://www.freecodecamp.org/learn/coding-interview-prep/project-euler/problem-8-largest-product-in-a-series
     @Test
-    public void given_4Return_5832(){
-        fail();
+    public void given_4Return_5832() {
+        LargestProduct largestProduct = new LargestProduct();
+        assertEquals(5832, largestProduct.findGreatestProduct(4));
     }
 
     @Test
-    public void given_13Return_23514624000(){
-        fail();
+    public void given_13Return_23514624000() {
+        LargestProduct largestProduct = new LargestProduct();
+        assertEquals(23_514_624_000L, largestProduct.findGreatestProduct(13));
     }
+
 }
